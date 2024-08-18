@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 1000px;
+  position: relative;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.nav {
+  background-color: rgba(11, 11, 11, 0.809);
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 56px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.w3 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 15px;
+  top: 5px;
+}
+.ul1 li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.ul1 li a {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+}
+
+.ul1 li .main-font {
+  font-size: large;
+}
+
+.ul2 li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.ul2 li a {
+  text-decoration: none;
+  color: white;
+}
+
+.ul1 li:hover {
+  text-shadow: 1px 1px 1px green;
+}
+.ul2 li:hover {
+  background-color: black;
+}
+
+.search {
+  position: absolute;
+  left: 850px;
+  top: 10px;
+  height: 40px;
+  border: 2px black solid;
+  border-radius: 2cap;
+  text-align: center;
+  font-size: 15px;
+  font-family: monospace;
+  font-style: italic;
+}
+
+.search:hover {
+  border: 3.5px solid rgb(59, 155, 46);
+}
+
+.sign {
+  position: absolute;
+  left: 1303px;
+  top: 10px;
+  background-color: rgb(24, 172, 24);
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 5cqb;
+  z-index: 1;
+}
+.ul1 li .sign {
+  color: white;
+}
+
+.sign:hover {
+  background-color: green;
+}
+
+.log {
+  position: absolute;
+  left: 1380px;
+  top: 10px;
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(172, 214, 176);
+  text-align: center;
+  line-height: 20px;
+  border-radius: 5cqb;
+}
+
+.log:hover {
+  background-color: green;
+}
+
+.aside {
+  position: fixed;
+  top: 110px;
+  background-color: rgb(235, 239, 243);
+  height: 630px;
+  width: 200px;
+  overflow: auto;
+  text-transform: capitalize;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.aside ul li a {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  top: 20px;
+  left: 50px;
+  padding-bottom: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.aside ul li a:hover {
+  text-shadow: 1px 1px 1px green;
+  font-variant: small-caps;
+}
+
+.context {
+  position: absolute;
+  padding: 50px;
+  top: 80px;
+  left: 180px;
+}
+
+.context h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.context p {
+  text-align: justify;
+  font-family:sans-serif;
+  font-size: large;
+}
+
+.context .html {
+  float: right;
+  transform: grow;
+  transition: transform 0.3s ease 0s;
+  filter: grayscale(10%);
+}
+
+.context .html:hover {
+  transform:matrix(1.1, 0, 0, 1.1, 0, 0);
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
+.context .css {
+  float: left;
+  transform: grow;
+  transition: transform 0.3s ease 0s;
+  filter: grayscale(10%);
+  width: 450px;
+  height: 350px;
+}
+
+.context .css:hover {
+  transform:matrix(1.1, 0, 0, 1.1, 0, 0);
+  cursor: pointer;
+  filter: grayscale(0%);
+}
